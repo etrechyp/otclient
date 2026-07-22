@@ -1,0 +1,11 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  call-android-build:
+    uses: ./.github/workflows/reusable-build-android-apk.yml
+
