@@ -10,4 +10,3 @@ on:
 jobs:
   build-android:
     uses: ./.github/workflows/reusable-build-android-apk.yml
-
