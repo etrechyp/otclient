@@ -7,6 +7,11 @@ on:
       - master
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   build-android:
     uses: ./.github/workflows/reusable-build-android-apk.yml
+
